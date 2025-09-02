@@ -44,10 +44,10 @@ Para executar este projeto localmente, siga os passos abaixo.
 
 - Node.js (v18 ou superior)
 - npm, yarn ou pnpm
-- Uma conta no [Firebase](https://firebase.google.com/)
-- Uma conta no [Supabase](https://supabase.io/)
-- Uma conta na [GroqCloud](https://console.groq.com/)
-- Credenciais da API do Google (OAuth 2.0)
+- Keys do [Firebase](https://firebase.google.com/)
+- Keys do [Supabase](https://supabase.io/)
+- API Key do [GroqCloud](https://console.groq.com/)
+- Key da API do Google (OAuth 2.0)
 
 ### Instalação
 
