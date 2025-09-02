@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <h1 align="center">MailMind</h1>
+  <p align="center">
+    <strong>Caixa de entrada inteligente com o poder da IA generativa</strong>
+    <br />
+    Classifique, resuma e responda e-mails com uma eficiência sem precedentes.
+  </p>
+</div>
 
-## Getting Started
+---
 
-First, run the development server:
+## 🚀 Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O **MailMind** é uma aplicação web moderna que transforma a maneira como você gerencia seus e-mails. Utilizando a API do Gmail para leitura e a potência dos modelos de linguagem da Groq (Llama 3.3), o MailMind automatiza tarefas demoradas, permitindo que você foque no que realmente importa.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A plataforma não apenas organiza sua caixa de entrada, mas também oferece ferramentas de IA para extrair informações, detectar ameaças de phishing, gerar resumos e até mesmo compor respostas inteligentes, otimizando seu fluxo de trabalho e produtividade.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Funcionalidades Principais
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **📊 Dashboard Intuitivo:** Visualize estatísticas, filtre e gerencie seus e-mails em uma interface limpa e moderna.
+- **🤖 Classificação Automática com IA:** E-mails são automaticamente categorizados como `Importante`, `Promocional`, `Social` ou `Fóruns`.
+- **📝 Resumos Inteligentes:** Obtenha o resumo de e-mails longos em uma única frase, com a ação principal e prazos destacados.
+- **🔍 Extração de Entidades:** A IA identifica e extrai automaticamente informações cruciais como datas de vencimento, valores, números de fatura e links.
+- **🛡️ Detecção de Phishing:** Um modelo de IA avançado analisa o conteúdo em busca de sinais de phishing, atribuindo um score de segurança e destacando os motivos da suspeita.
+- **✍️ Assistente de Resposta:** Gere respostas de e-mail contextuais, ajustando o tom (`formal`, `casual`, `direto`) e o tamanho (`curto`, `médio`, `longo`).
+- **📋 Gerenciador de Tarefas Kanban:** Crie tarefas a partir de e-mails com um clique e gerencie seu fluxo de trabalho em um quadro Kanban.
+- **🔐 Autenticação Segura:** Sistema de autenticação robusto utilizando Firebase (para login social e com e-mail/senha) e Supabase (para gerenciamento de sessão no backend).
 
-## Learn More
+## 🛠️ Tecnologias Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/)
+- **UI:** [Shadcn/UI](https://ui.shadcn.com/), [Framer Motion](https://www.framer.com/motion/)
+- **Backend:** Next.js (API Routes)
+- **Inteligência Artificial:** [Groq](https://groq.com/) (Llama 3.1)
+- **Autenticação:** [Firebase Authentication](https://firebase.google.com/docs/auth), [Supabase](https://supabase.io/)
+- **Banco de Dados:** [Supabase (PostgreSQL)](https://supabase.io/docs/guides/database)
+- **APIs Externas:** [Gmail API](https://developers.google.com/gmail/api)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🏁 Como Começar
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para executar este projeto localmente, siga os passos abaixo.
 
-## Deploy on Vercel
+### Pré-requisitos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Node.js (v18 ou superior)
+- npm, yarn ou pnpm
+- Uma conta no [Firebase](https://firebase.google.com/)
+- Uma conta no [Supabase](https://supabase.io/)
+- Uma conta na [GroqCloud](https://console.groq.com/)
+- Credenciais da API do Google (OAuth 2.0)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Instalação
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/seu-usuario/MailMind.git
+    cd MailMind
+    ```
+
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure as variáveis de ambiente:**
+    - Renomeie o arquivo `.env.example` para `.env.local`.
+    - Preencha as variáveis com as suas chaves do Firebase, Supabase, Groq e Google API.
+
+4.  **Execute o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+5.  **Abra no navegador:**
+    Acesse [`http://localhost:3000`](http://localhost:3000) para ver a aplicação em funcionamento.
+
+---
+
+<p align="center">
+  Feito com ❤️ por <strong>Cairo74</strong>
+</p>
